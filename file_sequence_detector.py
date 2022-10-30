@@ -16,13 +16,13 @@ class FileSequenceDetector :
     all_files : List[str]
     sequences : List[IFileSequence]
     
-    def __init__(self, all_files : List[str]):
-        self.all_files = all_files
+    def __init__(self, ):
         self.sequences = []
         
-    def detect_file_sequences(self):
+    def detect_file_sequences(self, all_files : List[str]):
         max_tries = 10
         num_tries = 0
+        self.all_files = all_files
         while len(self.all_files):
             first_file = self.all_files[0]
             # print("all files : ")

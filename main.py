@@ -12,9 +12,9 @@ test_dir = "C:\\gui2one\\3D\\houdini_19_playground\\render\\vellum_emit\\karma2"
 
 
 all_files = list_files(test_dir)
-detector = FileSequenceDetector(all_files)
+detector = FileSequenceDetector()
 
-detector.detect_file_sequences()
+detector.detect_file_sequences(all_files)
 
 if len(detector.sequences): 
     print(f"Found {len(detector.sequences)} sequence(s)")

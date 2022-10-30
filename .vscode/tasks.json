@@ -6,7 +6,7 @@
         {
             "label": "run detect file sequences",
             "type": "shell",
-            "command": "python ./detect_file_sequences.py",
+            "command": "cls | python ./main.py",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
